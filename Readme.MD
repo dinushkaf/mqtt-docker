@@ -10,18 +10,20 @@ This will show how to dockerize MQTT Broker.
 
 # Deploying
 * Pull the master branch and open a terminal window in master
+* create *data* folder `mkdir data`
+* create *log* folder `mkdir log`
 * create pwfile in *config* folder `touch config/pwfile`
 * create database in *data* folder `touch data/mosquitto.db`
 * create lof file in *log* folder `touch log/mosquitto.log`
 ## Edit compose file
-Open docker-compose.yml with a text editor
+Open docker-compose.yml with a text editor<br/>
 In the volumes part
 ``` 
  - /media/nimz/Library/RAHASAK/AirQuality/docker_mqtt/config:/mosquitto/config
  - /media/nimz/Library/RAHASAK/AirQuality/docker_mqtt/data:/mosquitto/data
  - /media/nimz/Library/RAHASAK/AirQuality/docker_mqtt/log:/mosquitto/log
 ```
-give the absolute path to the *config*, *data* and *log* folders.
+give the absolute path to the *config*, *data* and *log* folders.<br/>
 `- Absolute_path_to_your_folder:/mosquitto/destination_folder`
 
 This will mount those folders in the docker image we create
