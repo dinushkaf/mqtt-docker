@@ -1,5 +1,5 @@
 # Introduction
-This will show how to dockerize MQTT Broker.
+This will show how to dockerize MQTT Broker. or just download and run automatic_install.sh and it will do everything needed.
 
 # Requirements
 * Docker -CE
@@ -37,7 +37,7 @@ Give Username in `USERNAMEGOESHERE` and password in `PASSWORDGOESHERE`.<br/>
 this will store username and encrypted password in the pwfile. you can open it and see if the command worked correctly
 
 ## Dockerize
-* Stop local mqtt broker if it is running. `sudo service mosquitto stop` Because this will conflict with local 1883 port
+* Stop local mqtt broker if it is running. `sudo service mosquitto stop` Because this will conflict with local 1883 port.
 * Run `docker-compose up -d` to create the image
 * Then you can check if the broker is up and running by `docker ps -a` command
 * Test the broker(you can run mqtt client in host PC and connect to *localhost* with port *1883*)
