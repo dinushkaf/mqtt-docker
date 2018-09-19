@@ -31,7 +31,7 @@ This will mount those folders in the docker image we create
 ## Add username and password
 you can add users to the MQTT with the following command. You can add one or more.<br/>
 (you may need to install moasquiito on local computer to run this)<br/>
-PS - you **can not** add users while the broker is running. No need to restart.<br/>
+PS - you **can not** add users while the broker is running.<br/>
 Give Username in `USERNAMEGOESHERE` and password in `PASSWORDGOESHERE`.<br/>
 `mosquitto_passwd -b config/pwfile USERNAMEGOESHERE PASSWORDGOESHERE`<br/>
 this will store username and encrypted password in the pwfile. you can open it and see if the command worked correctly
